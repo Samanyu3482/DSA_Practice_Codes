@@ -10,6 +10,7 @@ public class ConnectingCitiesWithMiniCost {
             this.wt=w;
         }
     }
+    @SuppressWarnings("Unchecked")
     public static void createGraph(ArrayList<Edge>graph[],int n,int[][]cities){
         for(int i=0;i<n;i++){
             graph[i]=new ArrayList<>();
@@ -34,10 +35,12 @@ public class ConnectingCitiesWithMiniCost {
             this.v=v;
             this.cost=c;
         }
+        @Override
         public int compareTo(Pair p2){
             return this.cost-p2.cost;
         }
     }
+    @SuppressWarnings("Unchecked")
     public static int minCost(ArrayList<Edge>graph[],int V){
         boolean vis[]=new boolean[V];
         PriorityQueue<Pair>pq=new PriorityQueue<>();
@@ -67,6 +70,7 @@ public class ConnectingCitiesWithMiniCost {
             {4,7,0,0,0}
         };
         int n=cities.length;
+        @SuppressWarnings("Unchecked")
         ArrayList<Edge>graph[]=new ArrayList[n];
         createGraph(graph,n,cities);
         int ans=minCost(graph, n);
