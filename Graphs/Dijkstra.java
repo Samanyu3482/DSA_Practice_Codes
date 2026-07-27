@@ -31,7 +31,7 @@ public class Dijkstra {
 
         graph[1].add(new Edge(1,3,7));
         graph[1].add(new Edge(1,2,1));
-
+a
         graph[2].add(new Edge(2,4,3));
 
         graph[3].add(new Edge(3,5,1));
