@@ -67,6 +67,9 @@ public class ImplementHeap {
 
             return data;
         }
+        public boolean isEmpty() {
+            return arr.size() == 0;
+        }
     }
     public static void main(String[] args) {
         Heap hp = new Heap();
