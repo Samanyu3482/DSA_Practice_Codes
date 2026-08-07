@@ -10,6 +10,7 @@ public class NearbyCars {
             this.y = y;
             this.distSq = distSq;
         }
+        @Override
         public int compareTo(Point p2) {
             return this.distSq - p2.distSq;
         }
