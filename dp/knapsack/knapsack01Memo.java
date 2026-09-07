@@ -17,9 +17,9 @@ public class knapsack01Memo{
         }
     }
     public static void main(String[] args) {
-        int val [] = {15, 14, 10, 45, 30};
-        int wt [] = {2, 5, 1, 3, 4};
-        int W = 7;
+        int val [] = {1, 2, 3};
+        int wt [] = {4, 5, 1};
+        int W = 4;
         int dp [][] = new int[val.length + 1][W + 1];
         for ( int i = 0; i < dp.length; i++ ){
             Arrays.fill(dp[i], -1);
