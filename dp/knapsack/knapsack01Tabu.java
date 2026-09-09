@@ -19,6 +19,7 @@ public class knapsack01Tabu{
                 int w = wt[ i - 1 ];
                 if ( w <= j ){
                     dp[i][j] = Math.max( v + dp[ i - 1 ][ j - w ], dp[ i - 1 ][j] );
+                    
                 }else{
                     dp[i][j] = dp[ i - 1 ][j];
                 }
